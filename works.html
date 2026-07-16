@@ -151,14 +151,22 @@
   .card.p3{transform:translateY(-50%) translateZ(-250px) translateX(84px) translateY(-13%)}
   .wexp-bar{margin-top:20px}
   .wxd h3{font-size:21px}
+  /* img width/height属性とaspect-ratioの競合により実寸(800px)で表示され
+     画像が中央からずれて拡大表示されるバグを、高さを明示指定して修正 */
+  .card img{height:248px}
 }
 @media(max-width:560px){
   .wexp{padding:4px 0 76px}
-  .wexp-stage{perspective:1100px;padding:8px 0 20px}
-  .deck{width:min(330px,88%);height:240px;transform:rotateY(-8deg) rotateX(2deg)}
-  .card.p1{transform:translateY(-50%) translateZ(-40px) translateX(16px) translateY(-4%);opacity:.5}
-  .card.p2{transform:translateY(-50%) translateZ(-110px) translateX(28px) translateY(-7%);opacity:.24}
-  .card.p3{transform:translateY(-50%) translateZ(-190px) translateX(38px) translateY(-9%);opacity:.1}
+  /* .wrap の左右余白(26px)から外に出し、拡大したデッキがビューポート基準で
+     正しく中央配置・サイズ計算されるようにする(はみ出し・崩れ防止) */
+  .wexp-stage{margin-inline:-26px;--dw:min(420px, calc(100vw - 24px));perspective:none;padding:8px 0 20px}
+  .deck{width:var(--dw);height:calc(var(--dw) * 0.4767 + 84px);transform:none}
+  .card.p0{transform:translateY(-50%)!important}
+  .card.p1,.card.p2,.card.p3{display:none!important}
+  .card img{height:calc(var(--dw) * 0.4767)}
+}
+@media(max-width:400px){
+  .wexp-stage{margin-inline:-22px}
 }
 @media(prefers-reduced-motion:reduce){.card{transition:opacity .4s ease!important}}
 </style><section class="phero">

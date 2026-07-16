@@ -182,6 +182,22 @@ h1, .plan .pnote{
 .brk{display:none}
 @media(min-width:700px){.brk{display:inline}}
 
+/* スマホでの横はみ出し防止(安全策):
+   word-break:keep-all は端末のSafariバージョンによって長い文が折り返されず
+   右側にはみ出す(横スクロールが発生する)ことがあるため、狭い画面では
+   overflow-wrap:anywhere に切り替えて必ず折り返されるようにする */
+@media(max-width:640px){
+  .sec-title, .sec-lead, .hero-lead, .hero-sub,
+  .lead, .creed-text, .phero .jp,
+  .svc-intro .lead, .am-body p, .price-intro .lead,
+  .cm-left .lead, .support .stx, .prob-answer,
+  .reason p, .work-body .wlead, .wb .wlead, .vc p,
+  h1, .plan .pnote{
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
 /* ============================================================
    スマホ最適化(〜640px)— 全ページ共通の詰め・可読性調整
    ============================================================ */

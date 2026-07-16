@@ -146,12 +146,10 @@
 @media(max-width:560px){
   .hfoot{flex-direction:column;border-top:none}.hfoot div{padding:14px 0;border-top:1px solid var(--line-d);font-size:11.5px;display:flex;align-items:baseline;gap:12px}.hfoot div+div{padding-left:0;border-left:none}
   .hfoot div b{font-size:13px;margin-bottom:0;flex-shrink:0;min-width:96px}
-  .hstage{padding:10px 20px 60px;perspective:1200px;justify-content:center;overflow:hidden}
-  .deck{width:min(340px,86%);transform:rotateY(-8deg) rotateX(2deg);height:230px}
-  .card.p0{transform:translateY(-50%) translateZ(30px);opacity:1}
-  .card.p1{transform:translateY(-50%) translateZ(-40px) translateX(16px) translateY(-4%);opacity:.5}
-  .card.p2{transform:translateY(-50%) translateZ(-110px) translateX(28px) translateY(-7%);opacity:.24}
-  .card.p3{transform:translateY(-50%) translateZ(-190px) translateX(38px) translateY(-9%);opacity:.1}
+  .hstage{--dw:min(420px, calc(100vw - 24px));padding:10px 20px 60px;perspective:none;justify-content:center;overflow:hidden}
+  .deck{width:var(--dw);transform:none;height:calc(var(--dw) * 0.4767 + 84px)}
+  .card.p0{transform:translateY(-50%)!important;opacity:1}
+  .card.p1,.card.p2,.card.p3{display:none!important}
   .dlabel{left:0;bottom:-24px;padding:11px 16px}
   .dlabel .dn{font-size:13px}
   .hdots{left:20px;bottom:20px}
