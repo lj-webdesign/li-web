@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>葛飾区のホームページ制作ならLJ WEB DESIGN｜地域密着のWeb制作</title><meta name="description" content="東京都葛飾区を拠点にホームページ制作を行うLJ WEB DESIGN。中小企業・店舗・個人事業主向けに、問い合わせ・採用・販売につながるホームページを制作。対応業種、制作プラン、制作の流れ、よくある質問まで詳しくご紹介します。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://www.lj-webdesign.com/katsushika-web-design.html">
+<meta name="robots" content="index,follow">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#0B0E13">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LJ WEB DESIGN by LIQUID JAPAN">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="葛飾区のホームページ制作ならLJ WEB DESIGN｜地域密着のWeb制作">
+<meta property="og:description" content="東京都葛飾区を拠点にホームページ制作を行うLJ WEB DESIGN。中小企業・店舗・個人事業主向けに、問い合わせ・採用・販売につながるホームページを制作します。">
+<meta property="og:url" content="https://www.lj-webdesign.com/katsushika-web-design.html">
+<meta property="og:image" content="https://www.lj-webdesign.com/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="葛飾区のホームページ制作ならLJ WEB DESIGN｜地域密着のWeb制作">
+<meta name="twitter:description" content="東京都葛飾区を拠点にホームページ制作を行うLJ WEB DESIGN。中小企業・店舗・個人事業主向けに、問い合わせ・採用・販売につながるホームページを制作します。">
+<meta name="twitter:image" content="https://www.lj-webdesign.com/ogp.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "ホームページ制作・Web制作",
+  "name": "葛飾区のホームページ制作",
+  "provider": { "@type": "ProfessionalService", "name": "LJ WEB DESIGN by LIQUID JAPAN", "telephone": "080-5513-0889" },
+  "areaServed": [
+    { "@type": "City", "name": "葛飾区" },
+    { "@type": "State", "name": "東京都" },
+    { "@type": "Place", "name": "全国（オンライン対応）" }
+  ],
+  "url": "https://www.lj-webdesign.com/katsushika-web-design.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "トップ", "item": "https://www.lj-webdesign.com/" },
+    { "@type": "ListItem", "position": 2, "name": "葛飾区のホームページ制作", "item": "https://www.lj-webdesign.com/katsushika-web-design.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"葛飾区以外でも依頼できますか？","acceptedAnswer":{"@type":"Answer","text":"はい、対応可能です。葛飾区を拠点としていますが、オンライン打ち合わせを中心に東京23区・東京近郊、全国からのご依頼に対応しています。"}},
+    {"@type":"Question","name":"ホームページ制作にはどのくらいの期間がかかりますか？","acceptedAnswer":{"@type":"Answer","text":"内容や規模により異なりますが、ヒアリングから公開まで目安として3〜6週間程度です。詳しいスケジュールはご相談時にお伝えします。"}},
+    {"@type":"Question","name":"写真や文章がなくても依頼できますか？","acceptedAnswer":{"@type":"Answer","text":"はい。ヒアリングをもとに文章の整理・作成をサポートし、写真の構成についてもご提案します。"}},
+    {"@type":"Question","name":"スマートフォン対応は含まれますか？","acceptedAnswer":{"@type":"Answer","text":"はい。全てのプランでスマートフォン・タブレット表示に対応したレスポンシブデザインで制作します。"}},
+    {"@type":"Question","name":"オンラインでの打ち合わせは可能ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。ビデオ通話やチャットでの打ち合わせに対応しており、葛飾区や近隣地域以外の方でも安心してご依頼いただけます。"}}
+  ]
+}
+</script>
+</head><body>
+<header>
+  <div class="hd-in">
+    <a class="brand" href="index.html">
+      <span class="bt"><b>LJ WEB DESIGN</b><small>by LIQUID JAPAN</small></span>
+    </a>
+    <nav class="gnav"><a href="index.html">トップ</a><a href="service.html">サービス</a><a href="works.html">制作実績</a><a href="price.html">料金</a><a href="about.html">会社概要</a><a href="contact.html">お問い合わせ</a></nav>
+    <a class="btn btn-primary hd-cta" href="contact.html">無料相談</a>
+    <button class="menu-btn" aria-label="menu" onclick="document.querySelector('.mnav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mnav"><a href="index.html" onclick="mc()">トップ</a><a href="service.html" onclick="mc()">サービス</a><a href="works.html" onclick="mc()">制作実績</a><a href="price.html" onclick="mc()">料金</a><a href="katsushika-web-design.html" onclick="mc()">葛飾区のホームページ制作</a><a href="about.html" onclick="mc()">会社概要</a><a href="contact.html" onclick="mc()">お問い合わせ</a><a class="btn btn-primary" href="contact.html" onclick="mc()">無料相談する</a></nav>
+</header>
+<style>
+.ft-area{font-size:12.5px;color:var(--fog);border-top:1px solid var(--line-d);margin-top:28px;padding-top:20px}
+.kts-hero{padding:110px 0 40px}
+.kts-hero .eyebrow{color:var(--verd);font-family:var(--latin);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
+.kts-hero h1{font-family:var(--mincho);font-size:clamp(26px,4vw,40px);font-weight:800;color:#fff;line-height:1.6;letter-spacing:.03em;max-width:820px}
+.kts-hero .lead{margin-top:22px;font-size:15px;color:var(--fog);max-width:720px;line-height:1.9}
+.kts-sec{padding:64px 0;border-top:1px solid var(--line-d)}
+.kts-sec h2{font-family:var(--mincho);font-size:clamp(21px,2.6vw,28px);font-weight:800;color:#fff;letter-spacing:.03em;margin-bottom:26px}
+.kts-sec h3{font-family:var(--gothic);font-size:16px;font-weight:700;color:#fff;margin-bottom:8px}
+.kts-sec p{font-size:14px;color:var(--fog);line-height:1.9}
+.kts-grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-d);border:1px solid var(--line-d);margin-top:8px}
+.kts-grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-d);border:1px solid var(--line-d);margin-top:8px}
+.kts-cell{background:var(--ink);padding:32px 28px}
+.kts-flow{counter-reset:step;margin-top:8px}
+.kts-step{display:flex;gap:22px;padding:26px 0;border-bottom:1px solid var(--line-d)}
+.kts-step:first-child{border-top:1px solid var(--line-d)}
+.kts-step .sn{font-family:var(--disp);font-size:34px;color:var(--verd);line-height:1;flex-shrink:0;width:56px}
+.kts-area-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.kts-area-list span{font-size:12.5px;color:#C6CBD2;background:var(--ink-2);border:1px solid var(--line-d);padding:7px 14px;border-radius:999px}
+@media(max-width:820px){.kts-grid2,.kts-grid3{grid-template-columns:1fr}}
+</style>
+
+<section class="kts-hero">
+  <div class="wrap">
+    <p class="eyebrow">Katsushika / Web Design</p>
+    <h1>葛飾区のホームページ制作・Web制作ならLJ WEB DESIGN</h1>
+    <p class="lead">LJ WEB DESIGNは、東京都葛飾区を拠点にホームページ制作・Web制作を行っています。地域の中小企業・店舗・個人事業主の方を中心に、問い合わせ・採用・販売・信頼につながるホームページを、事業の実情に合わせて設計します。オンライン打ち合わせにも対応しているため、葛飾区以外の東京近郊・全国のお客様からのご相談も承っています。</p>
+  </div>
+</section>
+
+<section class="kts-sec">
+  <div class="wrap">
+    <h2>葛飾区の事業者向けホームページ制作</h2>
+    <p>葛飾区には、老舗の店舗から近年開業した個人事業主まで、幅広い事業者の方がいらっしゃいます。LJ WEB DESIGNでは、そうした事業者の方々が抱える「ホームページが古い」「スマホで見づらい」「問い合わせにつながらない」といった課題に対して、地域性や事業の背景を踏まえた上でヒアリングを行い、それぞれの強みが伝わる構成・デザインを設計します。制作後も月額の管理・更新サポートを用意しているため、公開して終わりにせず、長く運用できる形をご提案しています。</p>
+  </div>
+</section>
+
+<section class="kts-sec">
+  <div class="wrap">
+    <h2>対応業種</h2>
+    <p>建設・工事、飲食・小売、美容・理美容、医療・治療院、士業・専門サービス、製造・卸、教育・スクール、不動産、個人事業主のサービス業など、業種を問わず対応しています。過去の制作実績は<a href="works.html" style="color:var(--verd);text-decoration:underline">制作実績ページ</a>でご確認いただけます。</p>
+    <div class="kts-grid3">
+      <div class="kts-cell"><h3>建設・工事業</h3><p>会社の信頼性と施工実績が伝わる構成。採用ページとの連携も可能です。</p></div>
+      <div class="kts-cell"><h3>店舗・サービス業</h3><p>メニューやアクセス、予約導線を分かりやすく整理します。</p></div>
+      <div class="kts-cell"><h3>個人事業主</h3><p>低予算から始められるプランで、事業の魅力を丁寧に伝えます。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="kts-sec">
+  <div class="wrap">
+    <h2>ホームページ制作で解決できる課題</h2>
+    <div class="kts-grid2">
+      <div class="kts-cell"><h3>問い合わせが来ない</h3><p>導線設計とフォーム改善で、行動につながる構成にします。</p></div>
+      <div class="kts-cell"><h3>スマホで見づらい</h3><p>スマホでの閲覧を前提としたレスポンシブ設計で対応します。</p></div>
+      <div class="kts-cell"><h3>採用がうまくいかない</h3><p>働く魅力が伝わる採用ページで、応募につながる構成を設計します。</p></div>
+      <div class="kts-cell"><h3>更新ができず放置されている</h3><p>月額の管理・更新サポートで、公開後も整った状態を維持します。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="kts-sec">
+  <div class="wrap">
+    <h2>制作プラン</h2>
+    <p>ご予算や目的に応じて、Light・Standard・Brand・月額型の4プランをご用意しています。料金の詳細は<a href="price.html" style="color:var(--verd);text-decoration:underline">料金ページ</a>をご覧ください。</p>
+  </div>
+</section>
+
+<section class="kts-sec">
+  <div class="wrap">
+    <h2>制作の流れ</h2>
+    <div class="kts-flow">
+      <div class="kts-step"><div class="sn">01</div><div><h3>無料相談・ヒアリング</h3><p>現状の課題や目的、ご予算感をお伺いします。オンラインでの打ち合わせも可能です。</p></div></div>
+      <div class="kts-step"><div class="sn">02</div><div><h3>ご提案・お見積もり</h3><p>ヒアリング内容をもとに構成案とお見積もりをご提示します。</p></div></div>
+      <div class="kts-step"><div class="sn">03</div><div><h3>デザイン・制作</h3><p>デザイン確認をいただきながら制作を進めます。</p></div></div>
+      <div class="kts-step"><div class="sn">04</div><div><h3>公開・運用サポート</h3><p>公開後も、ご希望に応じて月額の管理・更新サポートを継続します。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="kts-sec">
+  <div class="wrap">
+    <h2>葛飾区および近隣地域への対応</h2>
+    <p>葛飾区を拠点に、以下のエリアを中心に対応しています。オンライン打ち合わせにより、記載エリア以外からのご依頼も承っています。</p>
+    <div class="kts-area-list">
+      <span>葛飾区</span><span>足立区</span><span>江戸川区</span><span>墨田区</span><span>荒川区</span><span>東京23区</span><span>東京都全域</span><span>全国（オンライン対応）</span>
+    </div>
+  </div>
+</section>
+
+<section class="kts-sec">
+  <div class="wrap">
+    <h2>オンライン打ち合わせ対応</h2>
+    <p>ビデオ通話やチャットツールを使ったオンライン打ち合わせに対応しています。現地での対面が難しい場合でも、資料や画面共有を通じて構成やデザインをすり合わせながら制作を進められます。</p>
+  </div>
+</section>
+
+<section class="kts-sec">
+  <div class="wrap">
+    <h2>よくある質問</h2>
+    <div class="kts-flow">
+      <div class="kts-step"><div><h3>Q. 葛飾区以外でも依頼できますか？</h3><p>はい、対応可能です。オンライン打ち合わせを中心に、東京23区・東京近郊、全国からのご依頼に対応しています。</p></div></div>
+      <div class="kts-step"><div><h3>Q. ホームページ制作にはどのくらいの期間がかかりますか？</h3><p>内容や規模により異なりますが、ヒアリングから公開まで目安として3〜6週間程度です。</p></div></div>
+      <div class="kts-step"><div><h3>Q. 写真や文章がなくても依頼できますか？</h3><p>はい。ヒアリングをもとに文章の整理・作成をサポートし、写真の構成についてもご提案します。</p></div></div>
+      <div class="kts-step"><div><h3>Q. スマートフォン対応は含まれますか？</h3><p>はい。全てのプランでレスポンシブデザインに対応しています。</p></div></div>
+      <div class="kts-step"><div><h3>Q. オンラインでの打ち合わせは可能ですか？</h3><p>はい。ビデオ通話やチャットでの打ち合わせに対応しています。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="kts-sec" style="border-bottom:1px solid var(--line-d)">
+  <div class="wrap" style="text-align:center">
+    <h2>無料相談はこちらから</h2>
+    <p style="max-width:520px;margin:0 auto 26px">葛飾区のホームページ制作について、まずはお気軽にご相談ください。ご相談・お見積もりは無料です。</p>
+    <a class="btn btn-primary" href="contact.html">無料相談する <span class="arw">→</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="bp-grid"></div>
+  <div class="wrap">
+    <div class="ft-cta">
+      <h3>事業の強みを、伝わる形に。</h3>
+      <p>ご相談・お見積もりは無料です。まずはお気軽にお問い合わせください。</p>
+      <a class="btn btn-primary" href="contact.html">無料相談する <span class="arw">→</span></a>
+    </div>
+    <div class="ft-top">
+      <div class="ft-brand">
+        <div class="fb-name">LJ WEB DESIGN</div>
+        <div class="fb-sub">by LIQUID JAPAN</div>
+        <p>事業の強みが、きちんと伝わるホームページを。問い合わせ・採用・販売・信頼につながる設計とデザイン。</p>
+      </div>
+      <div class="ft-col">
+        <h5>Menu</h5>
+        <a href="index.html">トップ</a><a href="service.html">サービス</a><a href="works.html">制作実績</a><a href="price.html">料金</a><a href="katsushika-web-design.html">葛飾区のホームページ制作</a><a href="about.html">会社概要</a><a href="contact.html">お問い合わせ</a>
+      </div>
+      <div class="ft-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><b>TEL</b>080-5513-0889</li>
+          <li><b>MAIL</b>ljweb@liquid-japan.com</li>
+          <li><b>INSTAGRAM</b><a href="https://www.instagram.com/lj_webdesign/" target="_blank" rel="noopener" style="color:inherit;transition:color .25s">@lj_webdesign</a></li>
+          <li><b>運営</b>LIQUID JAPAN</li>
+          <li><b>所在地</b>東京都葛飾区<br><a href="https://www.google.com/maps/place/%E8%91%9B%E9%A3%BE%E5%8C%BA" target="_blank" rel="noopener" style="color:var(--verd);text-decoration:underline">Googleマップで見る</a></li>
+          <li><b>代表</b>篠塚</li>
+        </ul>
+      </div>
+    </div>
+    <p class="ft-area">LJ WEB DESIGNは東京都葛飾区を拠点に、東京23区および全国オンラインでホームページ制作に対応しています。</p>
+    <div class="ft-bottom">
+      <p>&copy; 2026 LJ WEB DESIGN by LIQUID JAPAN. All rights reserved.</p>
+      <p>WEB DESIGN &amp; PRODUCTION — TOKYO</p>
+    </div>
+  </div>
+</footer>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="page-fade" aria-hidden="true"></div>
+<script>
+function mc(){document.querySelector('.mnav').classList.remove('open')}
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.querySelectorAll('.reasons-grid,.ind-grid,.stats-grid,.price-grid,.works-list,.faq-list,.voice-grid,.svc-list,.kts-grid2,.kts-grid3,.kts-flow').forEach(g=>{[...g.children].forEach((c,n)=>{if(c.classList.contains('rv'))c.style.transitionDelay=(n*70)+'ms'})});
+
+/* ===== 上質な動き(A案) ===== */
+(function(){
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  requestAnimationFrame(()=>document.body.classList.add('loaded'));
+  if(!reduce){
+    document.querySelectorAll('a[href]').forEach(a=>{
+      const href=a.getAttribute('href');
+      if(!href||href.startsWith('#')||href.startsWith('mailto')||a.target==='_blank'||href.startsWith('http'))return;
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        document.body.classList.add('leaving');
+        setTimeout(()=>{location.href=href},330);
+      });
+    });
+  }
+
+  const bar=document.getElementById('scrollProgress');
+  if(bar&&!reduce){
+    const upd=()=>{
+      const doc=document.documentElement;
+      const st=window.scrollY||doc.scrollTop||0;
+      const sh=doc.scrollHeight-window.innerHeight;
+      bar.style.width=(sh>0?Math.min(100,st/sh*100):0)+'%';
+    };
+    window.addEventListener('scroll',upd,{passive:true});
+    window.addEventListener('resize',upd,{passive:true});upd();
+  }
+
+  const tio=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');tio.unobserve(e.target)}})},{threshold:.25});
+  document.querySelectorAll('.reveal-lines,.reveal-up').forEach(el=>tio.observe(el));
+})();
+</script>
+</body></html>
