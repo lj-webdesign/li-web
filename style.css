@@ -73,7 +73,8 @@ nav.gnav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1p
 nav.gnav a:hover,nav.gnav a.active{color:#fff}
 nav.gnav a.active::after,nav.gnav a:hover::after{width:100%}
 .hd-cta{font-size:12.5px;padding:11px 22px}
-.menu-btn{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.menu-btn{display:none;background:none;border:none;cursor:pointer;padding:8px;position:relative}
+.menu-btn::before{content:"";position:absolute;inset:-10px}
 .menu-btn span{display:block;width:24px;height:2px;background:#fff;margin:5px 0;transition:.3s}
 @media(max-width:920px){
   nav.gnav,.hd-cta{display:none}
