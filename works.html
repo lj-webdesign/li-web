@@ -104,7 +104,7 @@
   .wsb-item{flex:0 0 auto}
   .wsb-item .wsb-cat{display:none}
 }
-.wexp-detail{position:relative;min-width:0}
+.wexp-detail{position:relative;min-width:0;min-height:860px}
 .wxd{transition:opacity .35s ease}
 .wxd.fading{opacity:0}
 .wx-head{display:flex;align-items:center;flex-wrap:wrap;gap:0 12px;margin-bottom:14px}
@@ -151,6 +151,9 @@
   .card.p3{transform:translateY(-50%) translateZ(-250px) translateX(84px) translateY(-13%)}
   .wexp-bar{margin-top:20px}
   .wxd h3{font-size:21px}
+  /* テキスト量が案件ごとに異なり、切り替え時に高さが変わってガタつく(コンテンツが
+     上下にずれる)のを防ぐため、最も長い案件でも収まる高さを確保しておく */
+  .wexp-detail{min-height:1030px}
   /* img width/height属性とaspect-ratioの競合により実寸(800px)で表示され
      画像が中央からずれて拡大表示されるバグを、高さを明示指定して修正 */
   .card img{height:248px}
@@ -166,6 +169,7 @@
   .card img{height:calc(var(--dw) * 0.4767)}
 }
 @media(max-width:400px){
+  .wexp-detail{min-height:1180px}
   .wexp-stage{margin-inline:-22px}
 }
 @media(prefers-reduced-motion:reduce){.card{transition:opacity .4s ease!important}}
@@ -387,13 +391,26 @@ document.querySelectorAll('.reasons-grid,.ind-grid,.stats-grid,.price-grid,.work
   });
   var sbItems=[].slice.call(sbWrap.children);
   cards.forEach(function(c,i){c.onclick=function(){ if(((i-f+N)%N)===0){ window.open(WD[i].link,"_blank","noopener"); } else { go(i); } };});
-  function positions(){cards.forEach(function(c,i){c.classList.remove("p0","p1","p2","p3");var p=(i-f+N)%N;if(p>3)p=3;c.classList.add("p"+p);});dots.forEach(function(d,i){d.classList.toggle("on",i===f);});sbItems.forEach(function(s,i){s.classList.toggle("on",i===f);if(i===f)s.scrollIntoView({behavior:"smooth",inline:"center",block:"nearest"});});}
+  function positions(userInitiated){cards.forEach(function(c,i){c.classList.remove("p0","p1","p2","p3");var p=(i-f+N)%N;if(p>3)p=3;c.classList.add("p"+p);});dots.forEach(function(d,i){d.classList.toggle("on",i===f);});sbItems.forEach(function(s,i){s.classList.toggle("on",i===f);});
+    /* タブの横スクロール追従は「ユーザー操作時」のみ行う。自動切り替え時は
+       scrollIntoView等を一切呼ばない(ページが縦に引き戻される不具合の原因だったため)。
+       また手動時もscrollIntoViewは使わず、タブ一覧自身のscrollLeftだけを動かし、
+       ページ本体やフォーカス位置には触れないようにする。 */
+    if(userInitiated){
+      var s=sbItems[f];
+      if(s && sbWrap){
+        var target=s.offsetLeft-(sbWrap.clientWidth-s.offsetWidth)/2;
+        target=Math.max(0,Math.min(target,sbWrap.scrollWidth-sbWrap.clientWidth));
+        sbWrap.scrollTo({left:target,behavior:"smooth"});
+      }
+    }
+  }
   function fill(){var d=WD[f];G.cat.textContent=d.cat;G.tag.textContent=d.tag;G.name.textContent=d.name;G.url.textContent=d.url;G.lead.textContent=d.lead;G.ch.textContent=d.challenge;G.ap.textContent=d.approach;G.pts.innerHTML=d.pts.map(function(x){return "<li>"+x+"</li>";}).join("");G.note.textContent=d.note||"";G.note.style.display=d.note?"block":"none";G.link.href=d.link;}
-  function render(anim){positions(); if(anim){xd.classList.add("fading"); setTimeout(function(){fill(); xd.classList.remove("fading");},300);} else {fill();}}
-  function go(i){f=i;render(true);reset();}
-  function next(){f=(f+1)%N;render(true);}
+  function render(anim,userInitiated){positions(userInitiated); if(anim){xd.classList.add("fading"); setTimeout(function(){fill(); xd.classList.remove("fading");},300);} else {fill();}}
+  function go(i){f=i;render(true,true);reset();}
+  function next(){f=(f+1)%N;render(true,false);}
   function reset(){clearInterval(t);t=setInterval(next,4800);}
-  render(false);reset();
+  render(false,false);reset();
   var stage=deck.closest(".wexp-stage");
   if(stage){stage.addEventListener("mouseenter",function(){clearInterval(t);});stage.addEventListener("mouseleave",reset);}
 })();
