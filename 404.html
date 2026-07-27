@@ -1,124 +1,40 @@
-// /api/contact.js
-// Vercel Serverless Function — お問い合わせフォームの送信処理
-//
-// 【必要な環境変数】Vercelのプロジェクト設定 > Environment Variables に設定してください。
-//   RESEND_API_KEY   … Resend (https://resend.com) で発行したAPIキー
-//   CONTACT_TO_EMAIL … 通知を受け取りたい宛先メールアドレス（例: ljweb@liquid-japan.com）
-//   CONTACT_FROM_EMAIL … 送信元アドレス（Resendで送信ドメイン認証が必要。例: noreply@lj-webdesign.com）
-//
-// 【Resend側で必要な設定】
-//   1. https://resend.com でアカウント作成
-//   2. 送信元に使うドメイン（lj-webdesign.com）をResendに追加し、DNSレコード(SPF/DKIM)を設定
-//   3. API Keyを発行し、上記の環境変数に設定
-//
-// ※ドメイン認証が完了するまでは、Resendのテスト用アドレス(onboarding@resend.dev)からのみ送信可能です。
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ページが見つかりません｜LJ WEB DESIGN by LIQUID JAPAN</title>
+<meta name="robots" content="noindex,follow">
+<link rel="stylesheet" href="style.css">
+<meta name="theme-color" content="#0B0E13">
+<style>
+.nf-wrap{min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:150px 26px 100px}
+.nf-wrap .nf-num{font-family:var(--disp);font-size:clamp(64px,14vw,140px);color:#fff;line-height:1;letter-spacing:.02em}
+.nf-wrap h1{font-family:var(--mincho);font-size:clamp(19px,3vw,26px);color:#fff;margin:14px 0 10px}
+.nf-wrap p{font-size:14px;color:var(--fog);max-width:440px;line-height:1.9;margin-bottom:36px}
+.nf-links{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+@media(max-width:640px){.nf-wrap{padding:110px 22px 80px}}
+</style>
+</head><body>
+<header>
+  <div class="hd-in">
+    <a class="brand" href="index.html">
+      <span class="bt"><b>LJ WEB DESIGN</b><small>by LIQUID JAPAN</small></span>
+    </a>
+    <nav class="gnav"><a href="index.html">トップ</a><a href="service.html">サービス</a><a href="works.html">制作実績</a><a href="price.html">料金</a><a href="about.html">会社概要</a><a href="contact.html">お問い合わせ</a></nav>
+    <a class="btn btn-primary hd-cta" href="contact.html">無料相談</a>
+    <button class="menu-btn" aria-label="menu" onclick="document.querySelector('.mnav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mnav"><a href="index.html" onclick="mc()">トップ</a><a href="service.html" onclick="mc()">サービス</a><a href="works.html" onclick="mc()">制作実績</a><a href="price.html" onclick="mc()">料金</a><a href="about.html" onclick="mc()">会社概要</a><a href="contact.html" onclick="mc()">お問い合わせ</a><a class="btn btn-primary" href="contact.html" onclick="mc()">無料相談する</a></nav>
+</header>
 
-const RATE_LIMIT_MIN_SECONDS = 3; // フォーム表示から3秒未満での送信はボット疑いとして拒否
+<div class="nf-wrap">
+  <div class="nf-num">404</div>
+  <h1>お探しのページが見つかりませんでした</h1>
+  <p>URLが変更または削除された可能性があります。お手数をおかけしますが、下記よりお探しのページをご覧ください。</p>
+  <div class="nf-links">
+    <a class="btn btn-primary" href="index.html">トップページへ戻る</a>
+    <a class="btn btn-ghost" href="works.html">制作実績を見る</a>
+    <a class="btn btn-ghost" href="contact.html">お問い合わせ</a>
+  </div>
+</div>
 
-function isValidEmail(email) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(email || ""));
-}
-
-async function sendViaResend(payload) {
-  const res = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(payload),
-  });
-  if (!res.ok) {
-    const detail = await res.text().catch(() => "");
-    throw new Error(`Resend API error: ${res.status} ${detail}`);
-  }
-  return res.json();
-}
-
-export default async function handler(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "https://www.lj-webdesign.com");
-  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-
-  if (req.method === "OPTIONS") return res.status(204).end();
-  if (req.method !== "POST") {
-    return res.status(405).json({ ok: false, error: "method_not_allowed" });
-  }
-
-  if (!process.env.RESEND_API_KEY || !process.env.CONTACT_TO_EMAIL || !process.env.CONTACT_FROM_EMAIL) {
-    console.error("Missing required environment variables for /api/contact");
-    return res.status(500).json({ ok: false, error: "server_not_configured" });
-  }
-
-  let body = req.body;
-  if (typeof body === "string") {
-    try { body = JSON.parse(body); } catch { body = {}; }
-  }
-  body = body || {};
-
-  const name = String(body.name || "").trim();
-  const email = String(body.email || "").trim();
-  const business = String(body.business || "").trim();
-  const message = String(body.message || "").trim();
-  const consent = !!body.consent;
-  const honeypot = String(body.website || "").trim(); // 人間には見えない隠しフィールド
-  const startedAt = Number(body.startedAt || 0);
-
-  // --- スパム対策 ---
-  if (honeypot) {
-    // ボットがhoneypotに入力した場合は、成功したフリをして静かに破棄する
-    return res.status(200).json({ ok: true });
-  }
-  if (startedAt && (Date.now() - startedAt) / 1000 < RATE_LIMIT_MIN_SECONDS) {
-    return res.status(400).json({ ok: false, error: "too_fast" });
-  }
-
-  // --- 必須項目チェック ---
-  if (!name || !email || !message) {
-    return res.status(400).json({ ok: false, error: "missing_fields" });
-  }
-  if (!isValidEmail(email)) {
-    return res.status(400).json({ ok: false, error: "invalid_email" });
-  }
-  if (!consent) {
-    return res.status(400).json({ ok: false, error: "consent_required" });
-  }
-
-  const safe = (s) => String(s).replace(/[<>]/g, "");
-
-  try {
-    // 1) 管理者への通知メール
-    await sendViaResend({
-      from: `LJ WEB DESIGN お問い合わせ <${process.env.CONTACT_FROM_EMAIL}>`,
-      to: process.env.CONTACT_TO_EMAIL,
-      reply_to: email,
-      subject: `【無料相談】${safe(name)} 様よりお問い合わせ`,
-      text:
-        `お名前: ${safe(name)}\n` +
-        `業種: ${safe(business) || "未選択"}\n` +
-        `メール: ${safe(email)}\n\n` +
-        `ご相談内容:\n${safe(message)}`,
-    });
-
-    // 2) 送信者への自動返信
-    await sendViaResend({
-      from: `LJ WEB DESIGN <${process.env.CONTACT_FROM_EMAIL}>`,
-      to: email,
-      subject: "お問い合わせありがとうございます｜LJ WEB DESIGN",
-      text:
-        `${safe(name)} 様\n\n` +
-        `この度はLJ WEB DESIGNへお問い合わせいただき、誠にありがとうございます。\n` +
-        `内容を確認の上、原則24時間以内に担当よりご連絡いたします。\n\n` +
-        `▼お送りいただいた内容\n${safe(message)}\n\n` +
-        `----------------------------\n` +
-        `LJ WEB DESIGN by LIQUID JAPAN\n` +
-        `https://www.lj-webdesign.com/\n` +
-        `----------------------------`,
-    });
-
-    return res.status(200).json({ ok: true });
-  } catch (err) {
-    console.error("Contact form send failed:", err);
-    return res.status(500).json({ ok: false, error: "send_failed" });
-  }
-}
+<script>function mc(){document.querySelector('.mnav').classList.remove('open')}</script>
+</body></html>
