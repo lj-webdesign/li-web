@@ -45,7 +45,9 @@
     {"@type":"Question","name":"月額型プランと、通常プラン+月額サポートの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"通常プランは初期制作費をいただき、月額は管理・更新サポートの費用です。月額型プランは初期費用を抑え、制作費の一部を月額に含めた形です。"}},
     {"@type":"Question","name":"写真や文章の用意がなくても依頼できますか？","acceptedAnswer":{"@type":"Answer","text":"はい。ヒアリングをもとに文章の整理・作成をサポートし、写真の構成についてもご提案します。手元にある素材からでも、伝わる形に整えます。"}},
     {"@type":"Question","name":"契約期間はありますか？","acceptedAnswer":{"@type":"Answer","text":"月額管理・更新サポート、月額型ホームページプランともに、最低契約期間は12ヶ月です。それ以降は特に定めがなく、いつでも解約のご相談が可能です。"}},
-    {"@type":"Question","name":"解約したらサイトはどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"解約後もサイトはそのまま公開され続けます。終了するのは更新・保守作業のみです。ドメイン・サーバーはお客様名義でのご契約が基本のため、解約後もそのままお客様の管理下でご利用いただけます。"}}
+    {"@type":"Question","name":"解約したらサイトはどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"解約後もサイトはそのまま公開され続けます。終了するのは更新・保守作業のみです。ドメイン・サーバーはお客様名義でのご契約が基本のため、解約後もそのままお客様の管理下でご利用いただけます。"}},
+    {"@type":"Question","name":"ホームページの知識が全くないのですが大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"もちろん大丈夫です。専門知識は一切必要ありません。どんなホームページにしたいかがまだ曖昧な状態でも、ヒアリング内容をもとにこちらからご提案しながら制作を進めますので、初めての方でも安心してご依頼いただけます。"}},
+    {"@type":"Question","name":"契約後はどのような流れで制作が進みますか？","acceptedAnswer":{"@type":"Answer","text":"ご契約後、まずは専用のヒアリングフォームをご案内いたします。ご回答内容をもとにホームページの叩き台(初稿)を制作し、その後お客様にご確認いただきながら修正を重ね、ご満足いただけるまでブラッシュアップしていきます。完成イメージが固まっていない場合も、ご提案しながら進めます。"}}
   ]
 }
 </script>
@@ -68,6 +70,7 @@
 .price-intro .lead{font-family:var(--mincho);font-size:clamp(19px,2.6vw,26px);font-weight:700;color:#fff;line-height:1.8;max-width:760px;letter-spacing:.04em}
 .price-wrap{padding:56px 0 100px}
 .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.price-revision-note{margin-top:28px;padding:18px 22px;background:rgba(63,160,137,.08);border:1px solid rgba(63,160,137,.28);border-radius:10px;font-size:13.5px;color:#D7DCE2;line-height:1.8}
 .plan{background:var(--ink-2);border:1px solid var(--line-d);padding:42px 36px;display:flex;flex-direction:column;position:relative;min-width:0}
 .plan.reco{border:1px solid var(--verd)}
 .plan .badge{position:absolute;top:-13px;left:32px;background:var(--verd);color:#04120E;font-family:var(--latin);font-size:11px;font-weight:800;letter-spacing:.14em;padding:5px 16px}
@@ -160,25 +163,26 @@
 <section class="price-wrap"><div class="wrap">
   <div class="price-grid">
     <div class="plan rv"><p class="pfor">まず、事業の顔を整えたい方に</p><h3>ライトプラン</h3>
-      <div class="pprice"><div class="row"><span>初期制作費</span><b>¥89,000<small>〜</small></b></div><div class="row"><span>月額管理・更新サポート</span><b>¥5,500<small>〜/月</small></b></div></div>
+      <div class="pprice"><div class="row"><span>初期制作費</span><b>¥89,000</b></div><div class="row"><span>月額管理・更新サポート</span><b>¥5,500<small>/月</small></b></div></div>
       <ul><li>1ページ構成 / スマホ対応</li><li>事業紹介 / サービス紹介</li><li>お問い合わせ導線</li><li>Instagram / LINE / Googleマップ等のリンク設置</li></ul>
       <p class="pnote">名刺代わりで終わらせない、信頼感の伝わる1ページを設計します。</p></div>
 
     <div class="plan reco rv"><span class="badge">おすすめ</span><p class="pfor">事業の魅力を、しっかり伝えたい方に</p><h3>スタンダードプラン</h3>
-      <div class="pprice"><div class="row"><span>初期制作費</span><b>¥169,800<small>〜</small></b></div><div class="row"><span>月額管理・更新サポート</span><b>¥8,800<small>〜/月</small></b></div></div>
+      <div class="pprice"><div class="row"><span>初期制作費</span><b>¥169,800</b></div><div class="row"><span>月額管理・更新サポート</span><b>¥8,800<small>/月</small></b></div></div>
       <ul><li>3〜5ページ構成 / スマホ対応</li><li>トップ / 事業内容 / 実績 / 会社概要 / お問い合わせ</li><li>文章整理 / 問い合わせ導線設計</li><li>SNS / Googleマップ / 外部サービス連携</li></ul>
       <p class="pnote">事業内容・実績・会社情報までしっかり伝え、問い合わせ・採用・信頼につなげます。迷ったら、まずこのプランを。</p></div>
 
     <div class="plan rv"><p class="pfor">採用・販売まで、作り込みたい方に</p><h3>ブランド・採用強化プラン</h3>
-      <div class="pprice"><div class="row"><span>初期制作費</span><b>¥298,000<small>〜</small></b></div><div class="row"><span>月額管理・更新サポート</span><b>¥12,000<small>〜/月</small></b></div></div>
+      <div class="pprice"><div class="row"><span>初期制作費</span><b>¥249,800</b></div><div class="row"><span>月額管理・更新サポート</span><b>¥12,000<small>/月</small></b></div></div>
       <ul><li>5ページ以上 / ブランド設計</li><li>採用ページ / 実績・事例ページ</li><li>文章作成サポート / 写真構成のご提案</li><li>SNS / EC / LINE / Googleマップ導線</li><li>SEO初期設計 / 応募導線設計</li></ul>
       <p class="pnote">事業の世界観から採用・販売の導線まで、一貫して作り込む上位プランです。</p></div>
 
     <div class="plan rv"><p class="pfor">初期費用を抑えて始めたい方に</p><h3>月額型ホームページプラン</h3>
-      <div class="pprice"><div class="row"><span>初期費用</span><b>¥49,800<small>〜</small></b></div><div class="row"><span>月額</span><b>¥16,500<small>〜/月</small></b></div></div>
+      <div class="pprice"><div class="row"><span>初期費用</span><b>¥49,800</b></div><div class="row"><span>月額</span><b>¥16,500<small>/月</small></b></div></div>
       <ul><li>1〜3ページ構成 / スマホ対応</li><li>お問い合わせ導線</li><li>制作+管理+軽微な更新をまとめてサポート</li><li>サーバー・ドメイン周りの管理相談</li></ul>
       <p class="pnote">始めやすく、公開後も安心して任せられる月額型。</p><p class="psmall">※最低契約期間12ヶ月。詳細は下記「契約条件」をご確認ください。</p></div>
   </div>
+  <p class="price-revision-note rv">💬 理想のホームページになるまで、初回公開前の修正回数に制限なく対応いたします。追加料金のご心配は不要です。</p>
 </div></section>
 
 <section class="support">
@@ -209,6 +213,8 @@
       <div class="faq-item"><button class="faq-q">写真や文章の用意がなくても依頼できますか？</button><div class="faq-a"><div class="faq-ain">はい。ヒアリングをもとに文章の整理・作成をサポートし、写真の構成についてもご提案します。手元にある素材からでも、伝わる形に整えます。</div></div></div>
       <div class="faq-item"><button class="faq-q">契約期間はありますか？</button><div class="faq-a"><div class="faq-ain">月額管理・更新サポート、月額型ホームページプランともに、最低契約期間は12ヶ月です。それ以降は特に定めがなく、いつでも解約のご相談が可能です。</div></div></div>
       <div class="faq-item"><button class="faq-q">解約したらサイトはどうなりますか？</button><div class="faq-a"><div class="faq-ain">解約後もサイトはそのまま公開され続けます。終了するのは更新・保守作業のみで、サイトが非公開になることはありません。ドメイン・サーバーはお客様名義でのご契約が基本のため、解約後もそのままお客様の管理下でご利用いただけます。</div></div></div>
+      <div class="faq-item"><button class="faq-q">ホームページの知識が全くないのですが大丈夫ですか？</button><div class="faq-a"><div class="faq-ain">もちろん大丈夫です。専門知識は一切必要ありません。「どんなホームページにしたいか」がまだ曖昧な状態でも、ヒアリング内容をもとにこちらからご提案しながら制作を進めますので、初めての方でも安心してご依頼いただけます。</div></div></div>
+      <div class="faq-item"><button class="faq-q">契約後はどのような流れで制作が進みますか？</button><div class="faq-a"><div class="faq-ain">ご契約後、まずは専用のヒアリングフォームをご案内いたします。ホームページに掲載したい内容や事業内容、デザインのイメージなどをご回答いただき、その内容をもとにホームページの「叩き台(初稿)」を制作いたします。その後、お客様にご確認いただきながら修正を重ね、ご満足いただけるまでブラッシュアップしていきます。「完成イメージがまだ固まっていない」という方でも、こちらからご提案しながら進めますのでご安心ください。</div></div></div>
     </div>
   </div>
 </section>
