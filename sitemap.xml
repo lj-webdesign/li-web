@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.lj-webdesign.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://www.lj-webdesign.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority><lastmod>2026-08-05</lastmod></url>
   <url><loc>https://www.lj-webdesign.com/service.html</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://www.lj-webdesign.com/works.html</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-16</lastmod></url>
-  <url><loc>https://www.lj-webdesign.com/price.html</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-07-16</lastmod></url>
-  <url><loc>https://www.lj-webdesign.com/katsushika-web-design.html</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://www.lj-webdesign.com/price.html</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-08-05</lastmod></url>
+  <url><loc>https://www.lj-webdesign.com/katsushika-web-design.html</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-08-05</lastmod></url>
+  <url><loc>https://www.lj-webdesign.com/industry/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-08-07</lastmod></url>
+  <url><loc>https://www.lj-webdesign.com/industry/construction/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-08-07</lastmod></url>
+  <url><loc>https://www.lj-webdesign.com/industry/barber/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-08-07</lastmod></url>
+  <url><loc>https://www.lj-webdesign.com/industry/electrician/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-08-07</lastmod></url>
+  <url><loc>https://www.lj-webdesign.com/industry/hairsalon/</loc><changefreq>monthly</changefreq><priority>0.9</priority><lastmod>2026-08-07</lastmod></url>
+  <url><loc>https://www.lj-webdesign.com/area/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-08-07</lastmod></url>
+  <url><loc>https://www.lj-webdesign.com/area/shinkoiwa/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-08-07</lastmod></url>
+  <url><loc>https://www.lj-webdesign.com/area/kameari/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-08-07</lastmod></url>
   <url><loc>https://www.lj-webdesign.com/about.html</loc><changefreq>yearly</changefreq><priority>0.5</priority><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://www.lj-webdesign.com/contact.html</loc><changefreq>yearly</changefreq><priority>0.9</priority><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://www.lj-webdesign.com/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2026-07-20</lastmod></url>
