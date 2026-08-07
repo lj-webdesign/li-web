@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "statusCode": 301 },
+    { "source": "/construction-web-design.html", "destination": "/industry/construction/", "statusCode": 301 }
+  ]
+}
