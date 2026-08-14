@@ -1,6 +1,19 @@
 {
+  "trailingSlash": true,
   "redirects": [
     { "source": "/index.html", "destination": "/", "statusCode": 301 },
     { "source": "/construction-web-design.html", "destination": "/industry/construction/", "statusCode": 301 }
+  ],
+  "rewrites": [
+    { "source": "/area", "destination": "/area/index.html" },
+    { "source": "/area/", "destination": "/area/index.html" },
+    { "source": "/area/shinkoiwa/", "destination": "/area/shinkoiwa/index.html" },
+    { "source": "/area/kameari/", "destination": "/area/kameari/index.html" },
+    { "source": "/industry", "destination": "/industry/index.html" },
+    { "source": "/industry/", "destination": "/industry/index.html" },
+    { "source": "/industry/construction/", "destination": "/industry/construction/index.html" },
+    { "source": "/industry/barber/", "destination": "/industry/barber/index.html" },
+    { "source": "/industry/electrician/", "destination": "/industry/electrician/index.html" },
+    { "source": "/industry/hairsalon/", "destination": "/industry/hairsalon/index.html" }
   ]
 }
