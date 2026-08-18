@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="favicon.png">
+<title>ページが見つかりません｜LJ WEB DESIGN by LIQUID JAPAN</title>
+<meta name="robots" content="noindex,follow">
+<link rel="stylesheet" href="style.css">
+<meta name="theme-color" content="#0B0E13">
+<style>
+.nf-wrap{min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:150px 26px 100px}
+.nf-wrap .nf-num{font-family:var(--disp);font-size:clamp(64px,14vw,140px);color:#fff;line-height:1;letter-spacing:.02em}
+.nf-wrap h1{font-family:var(--mincho);font-size:clamp(19px,3vw,26px);color:#fff;margin:14px 0 10px}
+.nf-wrap p{font-size:14px;color:var(--fog);max-width:440px;line-height:1.9;margin-bottom:36px}
+.nf-links{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+@media(max-width:640px){.nf-wrap{padding:110px 22px 80px}}
+</style>
+</head><body>
+<header>
+  <div class="hd-in">
+    <a class="brand" href="index.html">
+      <span class="bt"><b>LJ WEB DESIGN</b><small>by LIQUID JAPAN</small></span>
+    </a>
+    <nav class="gnav"><a href="index.html">トップ</a><a href="service.html">サービス</a><a href="works.html">制作実績</a><a href="price.html">料金</a><a href="about.html">会社概要</a><a href="contact.html">お問い合わせ</a></nav>
+    <a class="btn btn-primary hd-cta" href="contact.html">無料相談</a>
+    <button class="menu-btn" aria-label="menu" onclick="document.querySelector('.mnav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mnav"><a href="index.html" onclick="mc()">トップ</a><a href="service.html" onclick="mc()">サービス</a><a href="works.html" onclick="mc()">制作実績</a><a href="price.html" onclick="mc()">料金</a><a href="about.html" onclick="mc()">会社概要</a><a href="contact.html" onclick="mc()">お問い合わせ</a><a class="btn btn-primary" href="contact.html" onclick="mc()">無料相談する</a></nav>
+</header>
+
+<div class="nf-wrap">
+  <div class="nf-num">404</div>
+  <h1>お探しのページが見つかりませんでした</h1>
+  <p>URLが変更または削除された可能性があります。お手数をおかけしますが、下記よりお探しのページをご覧ください。</p>
+  <div class="nf-links">
+    <a class="btn btn-primary" href="index.html">トップページへ戻る</a>
+    <a class="btn btn-ghost" href="works.html">制作実績を見る</a>
+    <a class="btn btn-ghost" href="contact.html">お問い合わせ</a>
+  </div>
+</div>
+
+<script>function mc(){document.querySelector('.mnav').classList.remove('open')}</script>
+</body></html>
